@@ -1,0 +1,38 @@
+export default function getGalleryImages() {
+  const names = [
+    "ds_clarks-ls-11.jpg",
+    "ds_clarks-ls-12.jpg",
+    "ds_clarks-ls-13.jpg",
+    "ds_clarks-ls-14.jpg",
+    "ds_clarks-ls-15.jpg",
+    "ds_clarks-ls-2.jpg",
+    "ds_clarks-ls-20.jpg",
+    "ds_clarks-ls-21.png",
+    "ds_clarks-ls-25.jpg",
+    "ds_clarks-ls-26.jpg",
+    "ds_clarks-ls-3.jpg",
+    "ds_clarks-ls-4.jpg",
+    "ds_clarks-ls-5.jpg",
+    "ds_clarks-ls-6.jpg",
+    "ds_clarks-ls-9.jpg",
+    "ds_garden-4.jpg",
+    "ds_garden-5.jpg",
+    "ds_garden-6.jpg",
+    "ds_h2-2.png",
+    "ds_hs-1.png",
+    "ds_ir-2.jpg",
+    "ds_li-2.jpg",
+    "ds_li-4.jpg",
+    "ds_li-5.jpg",
+    "ds_porch-2.jpg",
+    "ds_steps.png",
+    "ds_walkway-1.jpg",
+    "ds_wf-1.jpg",
+    "ds_wf-2.jpg",
+    "ds_wf-3.jpg",
+    "ds_wf-4.jpg",
+    "ds_wf-6.jpeg",
+  ];
+
+  return names.map((name) => `/images/gallery/${name}`);
+}
