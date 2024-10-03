@@ -27,9 +27,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${openSans.className} ${merriweather.variable} ${openSans.variable}`}
+        className={`${openSans.className} ${merriweather.variable} ${openSans.variable} bg-grey-800`}
       >
-        <main className={"bg-white w-full mx-auto overflow-hidden"}>
+        <main className={"bg-grey-800 h-full w-full mx-auto overflow-hidden"}>
           <ThemeProvider>{children}</ThemeProvider>
         </main>
       </body>
