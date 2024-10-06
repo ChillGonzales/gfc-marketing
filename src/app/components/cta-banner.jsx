@@ -1,3 +1,5 @@
+"use client";
+
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import AnimatedElement from "@/app/components/animated-element";
 import { useTheme } from "@/app/contexts/theme-provider";
@@ -23,7 +25,9 @@ export default function CtaBanner({
             {text}
           </AnimatedElement>
         </div>
-        <div className={`my-2 mx-auto border-2 border-${theme.mainGrey} text-${theme.mainGrey} rounded-md`}>
+        <div
+          className={`my-2 mx-auto border-2 border-${theme.mainGrey} text-${theme.mainGrey} rounded-md`}
+        >
           <AnimatedElement
             animationClass={
               "animate-fade-in lg:animate-fade-in lg:animate-slide-in"

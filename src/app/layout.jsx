@@ -18,9 +18,9 @@ const openSans = Open_Sans({
 });
 
 export const metadata = {
-  title: "The Secrets Your SEO Agency Doesn't Want You To Know",
+  title: "The Secret Your SEO Agency Doesn't Want You To Know",
   description:
-    "Find out about how SEO really works, and why you should stop paying for SEO work until you understand what you're paying for.",
+    "Find out about how SEO really works, and why you should stop paying for SEO work until you learn this.",
 };
 
 export default function RootLayout({ children }) {
@@ -32,6 +32,7 @@ export default function RootLayout({ children }) {
         <main className={"bg-grey-800 h-full w-full mx-auto overflow-hidden"}>
           <ThemeProvider>{children}</ThemeProvider>
         </main>
+        <Footer />
       </body>
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
     </html>

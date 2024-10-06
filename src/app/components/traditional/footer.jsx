@@ -31,140 +31,15 @@ export default function Footer() {
     ],
   };
   return (
-    <footer className="bg-white" aria-labelledby="footer-heading">
-      <div className={"border-t border-gray-900/10 mx-6"}></div>
+    <footer className="bg-grey-700" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
       <div className="mx-auto w-full px-6 pb-8 pt-12 sm:pt-16 lg:px-8">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8">
-            <img
-              className="h-24 rounded-md"
-              src="/images/logo_og_green.jpg"
-              alt="Clark's Landscape"
-            />
-            <div className="text-sm font-serif font-bold text-main-grey-900 flex flex-col gap-y-2">
-              <div className={"text-main"}>57 Lamoreaux Dr NW</div>
-              <div className={"text-main"}>Comstock Park, MI 49321</div>
-              <div className={"font-normal"}>
-                <a href={"mailto:info@clarkslandscape.com"}>
-                  <EnvelopeIcon
-                    className={"h-6 w-6 inline mr-1 text-main"}
-                  ></EnvelopeIcon>{" "}
-                  info@clarkslandscape.com
-                </a>
-              </div>
-              <div className={"font-normal"}>
-                <a href={"tel:616-784-5525"}>
-                  <PhoneIcon
-                    className={"h-6 w-6 inline mr-1 text-main"}
-                  ></PhoneIcon>
-                  (616) 784-5525
-                </a>
-              </div>
-            </div>
-            <div className="flex space-x-6">
-              {navigation.social.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  target={"_blank"}
-                  className="text-gray-400 hover:text-gray-500"
-                >
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
-                </a>
-              ))}
-            </div>
-          </div>
-          <div className="mt-16 grid grid-cols-2 gap-32 xl:col-span-2 xl:mt-0 font-serif">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">
-                  Services
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.solutions.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900 whitespace-nowrap"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">
-                  Support
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.support.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">
-                  Company
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">
-                  Legal
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="mt-8 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-16">
-          <p className="text-xs leading-5 text-gray-500">
-            &copy; {new Date().getFullYear()} Clark&apos;s Landscape, Inc. All
-            rights reserved. Built, powered, and developed by{" "}
-            <a
-              target={"_blank"}
-              className={"font-bold text-orange-400 hover:text-orange-500"}
-              href={"https://growthforge.dev"}
-            >
-              growthforge
-            </a>
-            . A West Michigan Web Design agency.
+          <p className="text-xs leading-5 text-grey-500">
+            &copy; {new Date().getFullYear()} Growthforge Consulting LLC. All
+            rights reserved.
           </p>
         </div>
       </div>
