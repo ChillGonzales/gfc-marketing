@@ -131,8 +131,8 @@ export default function Home() {
                 <p>
                   "I was really surprised with how simple the strategy is. I was
                   expecting something really complex and like a ton of SEO
-                  behind it or something. This has been really easy to do
-                  myself."
+                  behind it or something. So much easier to follow than I was
+                  expecting."
                 </p>
               </blockquote>
               <figcaption className="mt-10">
