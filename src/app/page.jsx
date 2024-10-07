@@ -1,13 +1,21 @@
 "use client";
 
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className={"min-h-screen overflow-scroll"}>
+    <div className={"min-h-screen"}>
       {/*<Script src="https://f.convertkit.com/ckjs/ck.5.js"></Script>*/}
       <div className={"bg-gradient-to-b from-grey-900 to-grey-700 h-full"}>
-        <div className="mx-auto max-w-2xl py-32 lg:py-32 px-2">
+        <Image
+          className={"pt-4 mx-auto"}
+          src={"images/growthforge_t.png"}
+          alt={"Growthforge logo"}
+          width={75}
+          height={75}
+        />
+        <div className="mx-auto max-w-2xl py-16 lg:py-20 px-2">
           <div className={"mb-4"}>
             <div className="text-sm text-center tracking-widest uppercase text-orange-vivid-400 font-semibold">
               HOME SERVICE OWNERS
@@ -37,7 +45,7 @@ export default function Home() {
             <span
               className={"block text-gray-300 text-lg font-bold text-start"}
             >
-              In this FREE guide you'll learn:
+              In this FREE 5-day email course you'll learn:
             </span>
             <ul
               className={
@@ -50,8 +58,8 @@ export default function Home() {
               </li>
               <li>How to get found online by the customers you want.</li>
               <li>
-                How to set up your business to make the most of the customers
-                you do get.
+                How to set up systems and practices that will keep you growing
+                steadily year after year.
               </li>
               <li>How to do all this without paying expensive agencies.</li>
             </ul>
@@ -102,13 +110,15 @@ export default function Home() {
                 type={"submit"}
                 className="rounded-full bg-orange-vivid-500 px-3.5 py-3.5 text-lg font-bold text-white shadow-sm hover:bg-orange-vivid-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-vivid-500"
               >
-                Download the Free Guide
+                Get the Free Course
                 <ChevronDoubleRightIcon className={"w-6 h-6 ml-1 inline"} />
               </button>
-              <div className={"text-grey-300 text-sm mt-2 max-w-96"}>
-                Join hundreds of business owners who took control of their
-                online presence
-              </div>
+              {/*<div*/}
+              {/*  className={"text-grey-300 text-sm mt-2 max-w-96 sm:max-w-56"}*/}
+              {/*>*/}
+              {/*  Join hundreds of business owners who took control of their*/}
+              {/*  online presence*/}
+              {/*</div>*/}
             </div>
           </form>
           <div
@@ -128,7 +138,7 @@ export default function Home() {
               <figcaption className="mt-10">
                 <img
                   alt="Matt, a landscaper"
-                  src="images/t2.webp"
+                  src="images/chad.jpg"
                   className="h-10 w-10 rounded-full mx-auto"
                 />
                 <div className="mt-4 flex items-center justify-center space-x-3 text-base">
