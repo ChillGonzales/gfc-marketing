@@ -30,7 +30,7 @@ export default function Confirmed() {
               >
                 <p>
                   Thank you for confirming your email subscription! This will
-                  help to make sure you're getting very part of the email course
+                  help to make sure you're getting each part of the email course
                   without interruption.
                 </p>
                 <p>
