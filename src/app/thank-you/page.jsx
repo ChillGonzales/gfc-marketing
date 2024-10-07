@@ -1,7 +1,7 @@
 import Image from "next/image";
 import SeoMetadata from "@/app/components/seo-metadata";
 
-export default function Home() {
+export default function ThankYou() {
   return (
     <div className={"min-h-screen bg-gradient-to-b from-grey-900 to-grey-700"}>
       <SeoMetadata
@@ -43,9 +43,10 @@ export default function Home() {
                   here.
                 </p>
                 <p>
-                  You'll receive the first installment of the course in your
-                  inbox shortly. You can always reply to the emails to get in
-                  touch with me directly.
+                  You'll receive a confirmation email shortly. Once confirmed,
+                  your course will be on its way! If you ever have questions you
+                  can always reply to the emails to get in touch with me
+                  directly.
                 </p>
                 <p>
                   Our mission at Growthforge is to bring a new movement of
