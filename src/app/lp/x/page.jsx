@@ -3,14 +3,14 @@
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 
-export default function Home() {
+export default function XLandingPage() {
   return (
     <div className={"min-h-screen"}>
       {/*<Script src="https://f.convertkit.com/ckjs/ck.5.js"></Script>*/}
       <div className={"bg-gradient-to-b from-grey-900 to-grey-700 h-full"}>
         <Image
           className={"pt-4 mx-auto"}
-          src={"images/growthforge_t.png"}
+          src={"/images/growthforge_t.png"}
           alt={"Growthforge logo"}
           width={75}
           height={75}
@@ -31,11 +31,15 @@ export default function Home() {
               Here's What They Won't Tell You About Getting Found Online
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-400">
-              Most SEO and web agencies try to complicate the process so you
-              keep paying them month after month. But the truth about getting
-              found online is simpler than they let on—and we’re here to show
-              you how you can take control of your online presence without all
-              the confusion.
+              My name is Colin and I started Growthforge after leaving my career
+              as a software engineer, frustrated by all the ‘advice’ out there
+              on SEO, SEM, and online marketing. Turns out, most of it is
+              complete crap.
+              <br />
+              <br />
+              I'm going to show you what you actually need to do to move the
+              needle in your business, and how to set up the systems and
+              practices that will keep you growing steadily year after year.
             </p>
             <p className={"font-semibold mt-4 text-lg text-gray-300"}>
               Ready to learn the truth and start getting real customers again?
@@ -137,8 +141,8 @@ export default function Home() {
               </blockquote>
               <figcaption className="mt-10">
                 <img
-                  alt="Matt, a landscaper"
-                  src="images/chad.jpg"
+                  alt="Chad, a landscaper"
+                  src="/images/chad.jpg"
                   className="h-10 w-10 rounded-full mx-auto"
                 />
                 <div className="mt-4 flex items-center justify-center space-x-3 text-base">
