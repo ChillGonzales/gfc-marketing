@@ -1,5 +1,5 @@
 import LandingPage from "@/app/components/LandingPage";
 
-export default function XLandingPage() {
+export default function EmailLandingPage() {
   return <LandingPage />;
 }
