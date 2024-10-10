@@ -65,7 +65,10 @@ const SubmissionForm = () => {
   );
 };
 
-export default function LandingPage() {
+export default function LandingPage({
+  callout = "HOME SERVICE OWNERS",
+  niche = "home service business",
+}) {
   return (
     <div className={"min-h-screen"}>
       {/*<Script src="https://f.convertkit.com/ckjs/ck.5.js"></Script>*/}
@@ -80,7 +83,7 @@ export default function LandingPage() {
         <div className="mx-auto max-w-2xl py-16 lg:py-20 px-2">
           <div className={"mb-4"}>
             <div className="text-sm text-center tracking-widest uppercase text-orange-vivid-400 font-semibold">
-              HOME SERVICE OWNERS
+              {callout}
             </div>
           </div>
           <div className="mb-8 flex justify-center">
@@ -100,7 +103,7 @@ export default function LandingPage() {
               <br />
               <br />
               I'm going to show you what you actually need to do to move the
-              needle in your business, and how to set up the systems and
+              needle in your {niche}, and how to set up the systems and
               practices that will keep you growing steadily year after year.
             </p>
             <p className={"font-semibold mt-4 text-lg text-gray-300"}>
@@ -120,16 +123,13 @@ export default function LandingPage() {
                 "mx-auto text-lg leading-8 text-gray-300 list-disc text-start px-4"
               }
             >
+              <li>You're starting a new {niche} and feel lost.</li>
               <li>
-                You're starting a new home service business and feel lost.
+                You've owned a {niche} for years and are struggling to grow.
               </li>
               <li>
-                You've owned a home service business for years and are
-                struggling to grow.
-              </li>
-              <li>
-                You own a home service business and you're struggling to keep up
-                with new customer requests.
+                You own a {niche} and you're struggling to keep up with new
+                customer requests.
               </li>
             </ul>
           </div>
