@@ -68,6 +68,7 @@ const SubmissionForm = () => {
 export default function LandingPage({
   callout = "HOME SERVICE OWNERS",
   niche = "home service business",
+  children,
 }) {
   return (
     <div className={"min-h-screen"}>
@@ -81,6 +82,7 @@ export default function LandingPage({
           height={75}
         />
         <div className="mx-auto max-w-2xl py-16 lg:py-20 px-2">
+          {children}
           <div className={"mb-4"}>
             <div className="text-sm text-center tracking-widest uppercase text-orange-vivid-400 font-semibold">
               {callout}
@@ -105,6 +107,7 @@ export default function LandingPage({
               I'm going to show you what you actually need to do to move the
               needle in your {niche}, and how to set up the systems and
               practices that will keep you growing steadily year after year.
+              WITHOUT paying expensive agencies to do it for you.
             </p>
             <p className={"font-semibold mt-4 text-lg text-gray-300"}>
               Ready to learn the truth and start getting real customers again?
@@ -123,7 +126,9 @@ export default function LandingPage({
                 "mx-auto text-lg leading-8 text-gray-300 list-disc text-start px-4"
               }
             >
-              <li>You're starting a new {niche} and feel lost.</li>
+              <li>
+                You're starting a new {niche} and feel lost trying to grow.
+              </li>
               <li>
                 You've owned a {niche} for years and are struggling to grow.
               </li>
@@ -145,7 +150,7 @@ export default function LandingPage({
               }
             >
               <li>
-                The proven, essential tactics that drive results for your
+                The simple, essential tactics that drive results for your
                 business.
               </li>
               <li>How to get found online by the customers you want.</li>
